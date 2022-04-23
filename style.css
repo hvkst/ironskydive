@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:700|Roboto:100,300,700');
 
-/* General */
+/* General ##############################*/
 html,
 body {
   margin: 0;
@@ -13,7 +13,7 @@ body {
     line-height: 1.5;
     font-weight: 400;
 }
-/* H1 - H6 */
+/* H1 - H6 ##############################*/
 h1,
 h2,
 h3,
@@ -47,14 +47,17 @@ h4 {
     font-size: 1.5em;
     letter-spacing: 0.4px;
     line-height: 1em;
+    margin-bottom: 15px;
 }
 
 h5 {
     font-size: 1.2em;
     line-height: 1em;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
-/* Nav-Bar Settings */
+/* Nav-Bar Settings ##############################*/
 .nav-bar {
     background-color: rgb(25, 33, 41);
     padding-top: 14px;
@@ -93,7 +96,7 @@ h5 {
     font-weight: 500;
 }
 
-/* Section 1 - General Information */
+/* Section 1 - General Information ##############################*/
 .dark-background {
     background-color: rgb(25, 33, 41);
     color: white;
@@ -104,13 +107,12 @@ h5 {
     margin: 0 auto;
     padding: 75px 0;
 }
-###################################################################
-###################################################################
-###################################################################
+
 .text {
     font-size: 2em;
     font-weight: 100;
     text-align: center;
+    margin: 20px 0;
 }
 
 .link-btn {
@@ -123,20 +125,43 @@ h5 {
     text-decoration: none;
 }
 
-/* Section Structure */
+/* Section 2 - Structure ##############################*/
 .service-box {
+    width: 40%;
     font-size: 1.7em;
     text-align: center;
+    border: 2px solid #eee;
+    border-radius: 20px;
+    box-sizing: border-box;
+    margin: 50px 5% 0 5%;
+    box-shadow: 50px 5% 0 5%;
+    padding: 20px;
+
 }
 
 .service-box img {
     width: 125px;
 }
 
-/* Section Team */
+/* Section 3 - Team ##############################*/
+#team {
+    padding: 75px 0;
+    margin: 0 auto;
+}
+
+#team p {
+    width: 60%;
+    margin: 10px auto;
+}
+
 #team .section-text {
     font-size: 1.9em;
     text-align: center;
+}
+
+#team h3 {
+    width: 40%;
+    margin: 20px auto 30px;
 }
 
 #team .member-name {
@@ -149,20 +174,41 @@ h5 {
     height: 180px; 
 }
 
-/* Section Schedule */
+/* Section 4 - Schedule ##############################*/
 
+.schedule-table {
+    margin: 0 auto 40px;
+    font-size: 1.5em;
+}
 
+.schedule-table th,
+td {
+    border-bottom: 1px solid black;
+    padding: 5px 10px;
+    text-align: center;
+}
+
+.schedule-table td {
+    font-weight: 700;
+}
+
+.schedule-table td:nth-child(1) {
+    font-weight: 400;
+}
 
 /* Footer */
 
 .footer {
     font-size: 1.9em;
     text-align: center;
+    padding: 40px 100px;
+    margin-bottom: 25px;
 }
 
 .address {
     font-style: normal;
     font-size: 0.8em;
+    margin-bottom: 30px;
 }
 
 footer a {
@@ -172,11 +218,5 @@ footer a {
 
 footer ul {
     list-style: none;
+    padding: 0;
 }
-
-/*  
-    color: rgb(67, 163, 230); BLUE
-    color: rgb(25, 33, 41); DARKBLUE
-    color: rgb(0, 0, 0,); 
-    */
-
