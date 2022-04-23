@@ -57,7 +57,18 @@ h5 {
 /* Nav-Bar Settings */
 .nav-bar {
     background-color: rgb(25, 33, 41);
-    display: flex;
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+
+.nav-bar-ul {
+    width: 1200px;
+    margin: 0 auto;
+
+}
+.nav-bar-ul li {
+    list-style: none;
+    text-align: center;
 }
 
 .nav-bar a {
@@ -66,13 +77,15 @@ h5 {
     font-size: 2em;
 }
 
-/* Header-Section */
+
+/* Header */
 .header {
     background-image: url("https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/ironhack-skydive-background.jpg");
     background-position: 0 0;
     background-repeat: no-repeat;
     background-size: cover;
     height: 650px;
+    padding-top: 50px;
 }
 
 .quote {
@@ -80,12 +93,20 @@ h5 {
     font-weight: 500;
 }
 
-/* Section General Information */
+/* Section 1 - General Information */
 .dark-background {
     background-color: rgb(25, 33, 41);
     color: white;
 }
 
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 75px 0;
+}
+###################################################################
+###################################################################
+###################################################################
 .text {
     font-size: 2em;
     font-weight: 100;
