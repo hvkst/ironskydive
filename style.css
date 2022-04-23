@@ -57,7 +57,7 @@ h5 {
     margin-bottom: 0;
 }
 
-/* Nav-Bar Settings ##############################*/
+/* Nav-Bar ##############################*/
 .nav-bar {
     background-color: rgb(25, 33, 41);
     padding-top: 14px;
@@ -67,12 +67,15 @@ h5 {
 .nav-bar-ul {
     width: 1200px;
     margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
 
 }
 .nav-bar-ul li {
     list-style: none;
     text-align: center;
 }
+
 
 .nav-bar a {
     color: #fff;
@@ -81,7 +84,7 @@ h5 {
 }
 
 
-/* Header */
+/* Header ##############################*/
 .header {
     background-image: url("https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/ironhack-skydive-background.jpg");
     background-position: 0 0;
@@ -89,17 +92,42 @@ h5 {
     background-size: cover;
     height: 650px;
     padding-top: 50px;
+    position: relative;
 }
 
 .quote {
     font-size: 2.5em;
     font-weight: 500;
+    position: absolute;
+    left: 10%;
+    bottom: 100px;
+    color: #fff;
+}
+
+.quote em {
+    color:black;
+}
+
+.quote em span {
+    font-weight: 700;
 }
 
 /* Section 1 - General Information ##############################*/
+#general-information {
+    display: flex;
+    justify-content: space-evenly;
+}
+
 .dark-background {
     background-color: rgb(25, 33, 41);
     color: white;
+}
+
+#general-information .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 370px;
 }
 
 .container {
@@ -123,9 +151,24 @@ h5 {
     letter-spacing: 0.5px;
     text-align: center;
     text-decoration: none;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: 0.1px solid rgba(255, 255, 255, 0.4);
+}
+
+.link-btn:hover {
+    color: rgb(25, 33, 41);
+    box-shadow: 0px 0px 5px 0px rgb(255, 255, 255);
 }
 
 /* Section 2 - Structure ##############################*/
+#structure > div {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
 .service-box {
     width: 40%;
     font-size: 1.7em;
@@ -144,6 +187,18 @@ h5 {
 }
 
 /* Section 3 - Team ##############################*/
+#team > div  {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#team > div > article {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
 #team {
     padding: 75px 0;
     margin: 0 auto;
@@ -159,9 +214,9 @@ h5 {
     text-align: center;
 }
 
-#team h3 {
+#team hr {
     width: 40%;
-    margin: 20px auto 30px;
+    margin: 20px auto 30px auto;
 }
 
 #team .member-name {
@@ -175,7 +230,6 @@ h5 {
 }
 
 /* Section 4 - Schedule ##############################*/
-
 .schedule-table {
     margin: 0 auto 40px;
     font-size: 1.5em;
@@ -196,13 +250,15 @@ td {
     font-weight: 400;
 }
 
-/* Footer */
-
+/* Footer ##############################*/
 .footer {
     font-size: 1.9em;
     text-align: center;
     padding: 40px 100px;
     margin-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .address {
@@ -219,4 +275,9 @@ footer a {
 footer ul {
     list-style: none;
     padding: 0;
+}
+
+.map-frame {
+    height: 375px;
+    width: 60%;
 }
