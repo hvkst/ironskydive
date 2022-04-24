@@ -157,7 +157,7 @@ h5 {
 }
 
 .link-btn:hover {
-    color: rgb(25, 33, 41);
+    /* color: rgb(25, 33, 41); */
     box-shadow: 0px 0px 5px 0px rgb(255, 255, 255);
 }
 
@@ -269,6 +269,13 @@ td {
     width: 100%;
 }
 
+.slot-form-container select {
+    height: 28px;
+    outline: none;
+    padding: 3px;
+    width: 102%;
+}
+
 /* .slot-form-container select {
     height: 40px;
     outline: none;
@@ -282,6 +289,13 @@ td {
     background-color: white;
     padding: 15px;
     margin-top: 15px;
+    border-radius: 5px;
+  }
+
+  .slot-form-container button:hover {
+      color: #fff;
+      background-color: black;
+      box-shadow: 0px 0px 5px 2px rgb(67, 163, 230);
   }
 
 /* Footer ##############################*/
